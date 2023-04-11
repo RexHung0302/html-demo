@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My First Web Page</title>
+    </head>
+    <body>
+        <h1 style="color: red">My First Web Page</h1>
+        <p style="font-weight: 100;" id="p-element">My first paragraph.</p>
+    </body>
+    <script>
+      function initHandler() {
+          document.getElementById("p-element").innerHTML = "Paragraph changed.";
+          document.getElementsByTagName('h1')[0].style.color = "blue";
+      };
+
+      initHandler();
+    </script>
+</html>
